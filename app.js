@@ -6,7 +6,7 @@ const app = express();
 
 
 
-const PORT = 3000; // Choose an available port number
+const PORT = 3006; // Choose an available port number
 
 // sets the view engine
 app.set('view engine', 'ejs');
