@@ -14,6 +14,12 @@ app.set('view engine', 'ejs');
 // location where the webpage should look
 app.use(express.static('public'));
 
+
+app.get('/friends', (req, res) => {
+  const friends = ['Mickey', 'Goofy', 'Minnie', 'Daisy'];
+  res.render('friends', { friends });
+});
+
 // the default route 
 app.get('/', (req, res) => {
 
